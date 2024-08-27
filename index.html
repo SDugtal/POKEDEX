@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="sec.css">
+  <script src="./pokemon.js" defer></script>
+  <script src="./search.js" defer></script>
+</head>
+
+<body>
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <div class="splash-content">
+      <!-- Adding a GIF to the splash screen -->
+      <img src="pokeball.gif" alt="Loading..." class="splash-gif" />
+      <h1>Welcome to Pokedex!</h1>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main" style="display: none;">
+    <header class="header home">
+      <div class="container">
+        <div class="logo_in_center">
+          <div class="logo-wrapper">
+            <a href="/">
+              <img src="./assets/pokeball.svg" alt="pokeball" />
+              <h1>Pokedex</h1>
+            </a>
+          </div>
+        </div>
+        <div class="search-wrapper logo_in_center" >
+          <div style="display: flex; width: 70%; margin-bottom: 1em;">
+            <div class="search-wrap">
+              <img src="./assets/search.svg" alt="search icon" class="search-icon" />
+              <input type="text" class="search-input body3-fonts" placeholder="Search" id="search-input" />
+              <img src="./assets/cross.svg" alt="cross icon" class="search-close-icon" id="search-close-icon" />
+            </div>
+            <div class="sort-wrapper">
+              <div class="sort-wrap">
+                <img src="./assets/sorting.svg" alt="sorting" class="sort-icon" id="sort-icon" />
+              </div>
+              <div class="filter-wrapper">
+                <p class="body2-fonts">Sort by:</p>
+                <div class="filter-wrap">
+                  <div>
+                    <input type="radio" id="number" name="filters" value="number" checked />
+                    <label for="number" class="body3-fonts">Number</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="name" name="filters" value="name" />
+                    <label for="name" class="body3-fonts">Name</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="pokemon-list">
+      <div class="container">
+        <div class="list-wrapper"></div>
+      </div>
+      <div id="not-found-message">Pokemon not found</div>
+    </section>
+  </main>
+
+  <!-- JavaScript for splash screen functionality -->
+  <script>
+    // JavaScript to hide the splash screen after a delay
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        // Hide the splash screen
+        document.getElementById("splash-screen").style.display = "none";
+        // Show the main content
+        document.querySelector(".main").style.display = "block";
+      }, 3000); // 3000 milliseconds = 3 seconds
+    });
+  </script>
+</body>
+
+</html>
