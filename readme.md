@@ -11,10 +11,9 @@ Welcome to the Pokémon Search Web App! This project allows users to search for 
 
 ## UI/UX
 
-![Demo](assets\photospash.png )
-![](assets\photomain.jpeg)  
-![](assets\photodetail.jpeg)  
-
+![](assets/photospash.png)
+![](assets/photomain.jpeg)  
+![](assets/photodetail.jpeg)
 
 ## Installation
 
