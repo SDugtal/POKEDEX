@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pokedex</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="sec.css">
+  <link rel="stylesheet" href="sec.css" />
   <script src="./pokemon.js" defer></script>
   <script src="./search.js" defer></script>
 </head>
@@ -15,7 +15,6 @@
   <!-- Splash Screen -->
   <div id="splash-screen">
     <div class="splash-content">
-      <!-- Adding a GIF to the splash screen -->
       <img src="pokeball.gif" alt="Loading..." class="splash-gif" />
       <h1>Welcome to Pokedex!</h1>
       <p>Loading...</p>
@@ -34,8 +33,8 @@
             </a>
           </div>
         </div>
-        <div class="search-wrapper logo_in_center" >
-          <div style="display: flex; width: 70%; margin-bottom: 1em;">
+        <div class="search-wrapper logo_in_center">
+          <div style="display: flex; width: 70%; margin-bottom: 1em; align-items: center;">
             <div class="search-wrap">
               <img src="./assets/search.svg" alt="search icon" class="search-icon" />
               <input type="text" class="search-input body3-fonts" placeholder="Search" id="search-input" />
@@ -59,6 +58,12 @@
                 </div>
               </div>
             </div>
+            <!-- Evolution Button -->
+            <div class="evolution-button">
+              <a href="evolution.html">
+                <button class="evolution-btn">Evolution</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -71,16 +76,13 @@
     </section>
   </main>
 
-  <!-- JavaScript for splash screen functionality -->
+  <!-- JavaScript for Splash Screen -->
   <script>
-    // JavaScript to hide the splash screen after a delay
     document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
-        // Hide the splash screen
         document.getElementById("splash-screen").style.display = "none";
-        // Show the main content
         document.querySelector(".main").style.display = "block";
-      }, 3000); // 3000 milliseconds = 3 seconds
+      }, 3000);
     });
   </script>
 </body>

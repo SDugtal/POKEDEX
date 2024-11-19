@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* White background */
+    border: 15px solid #dc0a2d; /* Thicker red border with updated color */
+    box-sizing: border-box; /* Ensures border doesn't affect layout */
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #dc0a2d; /* Red color */
+    padding: 15px 30px; /* Smaller padding for a smaller header */
+    text-align: center;
+    margin: 0; /* No margin to prevent gap between header and border */
+    border-bottom: 15px solid #dc0a2d; /* Red bottom border to merge with the page border */
+  }
+  
+  .header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header .logo img {
+    width: 30px; /* Smaller logo image */
+    margin-right: 10px;
+  }
+  
+  .header .logo h1 {
+    font-size: 1.2rem; /* Smaller header text */
+    color: #fff; /* White text for header */
+    margin: 0; /* Remove any margin from h1 */
+  }
+  
+  /* Remove underline from the link */
+  .header .logo a {
+    text-decoration: none; /* Remove the blue underline */
+  }
+  
+  /* Main content */
+  .main {
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 50px; /* Oval shape */
+    margin: 20px auto; /* Center it and add some spacing */
+    max-width: 1200px; /* Limit the max width */
+    box-sizing: border-box; /* Ensures padding doesn't affect layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for emphasis */
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Evolution title */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Evolution wrapper (flexbox for layout) */
+  .evolution-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Evolution chain styling */
+  .evolution-chain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  /* Increase size on hover */
+  .evolution-chain:hover {
+    transform: scale(1.05); /* Increase size by 5% */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add stronger shadow on hover */
+  }
+  
+  /* Individual Pokémon styling */
+  .pokemon {
+    text-align: center;
+    margin: 0 15px;
+  }
+  
+  /* Pokémon image */
+  .pokemon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  /* Pokémon name styling */
+  .pokemon p {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Arrow styling */
+  .arrow {
+    font-size: 1.5rem;
+    color: #ff0000; /* Red arrow */
+  }
+  
+  /* Background colors for different Pokémon types */
+  .evolution-chain.fire {
+    background-color: #f08030; /* Fire Type */
+  }
+  
+  .evolution-chain.water {
+    background-color: #6890f0; /* Water Type */
+  }
+  
+  .evolution-chain.grass {
+    background-color: #78c850; /* Grass Type */
+  }
+  
+  .evolution-chain.electric {
+    background-color: #f8d030; /* Electric Type */
+  }
+  
+  /* More Pokémon type colors as needed */
+  
+  /* Style for the page border (added red border around entire page) */
+  body {
+    border: 15px solid #dc0a2d; /* Thicker red border */
+    box-sizing: border-box;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #dc0a2d; /* Red header color */
+    padding: 15px 30px; /* Padding for header */
+    text-align: center;
+    margin: 0; /* No margin to prevent gap between header and border */
+    border-bottom: 15px solid #dc0a2d; /* Red bottom border to merge with the page border */
+  }
+  .header .logo a {
+    text-decoration: none;
+  }
+  

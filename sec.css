@@ -24,5 +24,56 @@
   .main {
     display: none; 
   }
+  .evolution-button {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .evolution-button .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcb05;
+    color: #3b4cca;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .evolution-button .button:hover {
+    background-color: #ffde59;
+  }
+  .evolution-chain {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .evolution-chain input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .evolution-chain button {
+    padding: 10px 20px;
+    background-color: #ffcb05;
+    color: #3b4cca;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .evolution-chain button:hover {
+    background-color: #ffde59;
+  }
+  
+  #evolution-output {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3b4cca;
+  }
   
   

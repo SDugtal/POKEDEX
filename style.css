@@ -545,4 +545,25 @@ div#not-found-message {
   border-color: transparent;
   background-color: transparent;
 }
+/* Style for the Evolution button container */
+.evolution-button {
+  margin-left: 20px; /* Space between radio buttons and the Evolution button */
+}
 
+/* Style for the Evolution button */
+.evolution-btn {
+  background-color: #fff; /* White background for the button */
+  color: #e60012; /* Red text color */
+  font-size: 1rem; /* Set a reasonable font size */
+  padding: 10px 40px; /* Padding to create an oval shape */
+  border: 2px solid #e60012; /* Red border to match the theme */
+  border-radius: 50px; /* Oval shape with rounded corners */
+  cursor: pointer; /* Pointer cursor when hovering */
+  transition: none; /* No transition effect */
+}
+
+/* Focus effect for accessibility */
+.evolution-btn:focus {
+  outline: 2px solid #e60012; /* Red outline when focused */
+  outline-offset: 2px; /* Ensure the outline doesn't overlap text */
+}
